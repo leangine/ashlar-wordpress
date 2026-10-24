@@ -77,4 +77,21 @@ PHP support (php.net, 25 October 2026): 8.3 security fixes only until 31 Decembe
 
 ## Reporting a problem
 
-Set a security contact address before the first public release and put it here and in the plugin's readme. Until then, report problems privately to the repository owner. Do not open public issues for vulnerabilities.
+Please report security problems **privately**. Do not open a public issue or pull request for a vulnerability.
+
+Use GitHub's private vulnerability reporting: open the repository's **Security** tab and choose **Report a vulnerability**, or go straight to https://github.com/leangine/ashlar-wordpress/security/advisories/new. Only the maintainers can see your report.
+
+Please include:
+
+- What the problem is and where (file, feature or URL).
+- The versions of WordPress, PHP and Ashlar you tested.
+- Steps to reproduce, or a short proof of concept.
+- The impact you think it has.
+
+What to expect:
+
+- We will acknowledge your report and keep you informed as we investigate.
+- We will fix confirmed problems in a patch release and credit you in the changelog if you want.
+- Please give us reasonable time to release a fix before you publish details.
+
+Only the latest release of Ashlar and the latest WordPress and PHP security releases are supported.
