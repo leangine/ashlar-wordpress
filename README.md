@@ -42,6 +42,10 @@ The maintainers develop in a Docker stack (nginx, PHP-FPM 8.5, MariaDB, Mailpit,
 
 Work on `dev`. Do not commit straight to `stage` or `main`. There is no remote yet; add one with `git remote add origin <url>` and push all three branches.
 
+## Security
+
+Report vulnerabilities privately through the **Security** tab (Report a vulnerability). See `SECURITY.md`.
+
 ## Before every commit
 
 1. `composer run check` is clean.
