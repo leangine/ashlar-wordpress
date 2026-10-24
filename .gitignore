@@ -1,0 +1,25 @@
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Dependencies and build output
+vendor/
+node_modules/
+dist/
+build/
+*.zip
+
+# Local files and secrets. Never commit these.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+*.log
+.phpunit.result.cache
+.phpcs-cache
+.phpstan-cache

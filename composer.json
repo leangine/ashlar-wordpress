@@ -1,0 +1,37 @@
+{
+	"name": "leangine/ashlar-wp",
+	"description": "Ashlar WordPress theme and Ashlar Kits plugin. Development tooling only; the theme and plugin have no runtime dependencies.",
+	"type": "project",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.2"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"wp-coding-standards/wpcs": "^3.1",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"phpstan/phpstan": "^2.0",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"phpstan/extension-installer": "^1.4"
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"phpstan/extension-installer": true
+		},
+		"audit": {
+			"abandoned": "report"
+		}
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"lint:fix": "phpcbf",
+		"stan": "phpstan analyse --memory-limit=1G",
+		"check": [
+			"@lint",
+			"@stan",
+			"composer audit"
+		]
+	}
+}
